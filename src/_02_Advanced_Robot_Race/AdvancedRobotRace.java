@@ -24,7 +24,7 @@ public class AdvancedRobotRace {
 			
 			threads[i] = new Thread(() -> {
 				while(robots[a].getY() > 50) {
-					int r = rand.nextInt(100);
+					int r = rand.nextInt(200);
 					robots[a].setSpeed(2);
 					robots[a].move(r);
 				}
